@@ -27,8 +27,8 @@ public class Movement : MonoBehaviour
     {
         {
             moveDirection.x = Input.GetAxis("Horizontal") * speed;
-            moveDirection.z = Input.GetAxis("Vertical") * speed;
-
+            //moveDirection.z = Input.GetAxis("Vertical") * speed;
+            
             if (Input.GetButtonDown("Jump"))
             {
                 if (characterController.isGrounded)
